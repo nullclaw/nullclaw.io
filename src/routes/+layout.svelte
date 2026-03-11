@@ -53,12 +53,10 @@
     localStorage.setItem(EFFECTS_KEY, effectsDisabled ? "off" : "on");
   }
 
-  function cycleTheme() {
-    const currentIdx = themes.indexOf(theme);
-    const nextIdx = (currentIdx + 1) % themes.length;
-
+  function handleThemeChange(event: Event) {
+    const select = event.target as HTMLSelectElement;
     document.body.classList.remove(theme);
-    theme = themes[nextIdx];
+    theme = select.value as (typeof themes)[number];
     document.body.classList.add(theme);
     localStorage.setItem(THEME_KEY, theme);
   }
@@ -88,9 +86,14 @@
       >
         {effectsDisabled ? "FX:OFF" : "FX:ON"}
       </button>
-      <button class="icon-btn" onclick={cycleTheme} title="Cycle Theme"
-        >THEME</button
-      >
+      <select class="icon-btn theme-select" value={theme} onchange={handleThemeChange} title="Theme">
+        <option value="theme-matrix">MATRIX</option>
+        <option value="theme-synthwave">SYNTH</option>
+        <option value="theme-amber">AMBER</option>
+        <option value="theme-dracula">DRACULA</option>
+        <option value="theme-light">LIGHT</option>
+        <option value="theme-8bit-lobster">LOBSTER</option>
+      </select>
       <a href="https://github.com/nullclaw" target="_blank" class="github-btn"
         >GITHUB</a
       >
@@ -208,11 +211,27 @@
   }
 
   .icon-btn:hover,
+  .theme-select:hover,
+  .theme-select:focus,
   .github-btn:hover {
     background: var(--bg-hover);
     border-color: var(--accent);
     color: var(--accent);
     box-shadow: 0 0 10px var(--border-glow);
+    outline: none;
+  }
+
+  .theme-select {
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  .theme-select option {
+    background: var(--bg-surface);
+    color: var(--fg);
+    text-align: left;
   }
 
   .github-btn {
