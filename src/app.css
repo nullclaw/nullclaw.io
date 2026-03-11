@@ -66,18 +66,19 @@ body.theme-amber {
 }
 
 body.theme-8bit-lobster {
-  --bg: #0d0505;
-  --bg-surface: rgba(13, 5, 5, 0.85);
-  --bg-hover: rgba(40, 10, 10, 0.8);
-  --fg: #ffefef;
-  --fg-dim: #ccbbbb;
-  --accent: #ff3333;
-  --accent-dim: #cc0000;
-  --error: #ff5555;
-  --warning: #ffaa00;
-  --border: rgba(255, 51, 51, 0.4);
-  --border-glow: rgba(255, 51, 51, 0.6);
-  --text-glow: 0 0 6px rgba(255, 51, 51, 0.5);
+  /* Deep, vibrant, juicy arcade lobster */
+  --bg: #110000;
+  --bg-surface: rgba(36, 4, 4, 0.85); /* Rich dark crimson surface */
+  --bg-hover: rgba(64, 10, 10, 0.8);
+  --fg: #fff0ed; /* Very soft warm white */
+  --fg-dim: #f28b77; /* Soft salmon / lobster meat */
+  --accent: #ff4a22; /* Juicy vivid lobster red/orange */
+  --accent-dim: #c2290a; /* Deep cooked lobster shell */
+  --error: #ff1a1a;
+  --warning: #ffcc00;
+  --border: rgba(255, 74, 34, 0.45);
+  --border-glow: rgba(255, 74, 34, 0.75);
+  --text-glow: 0 0 8px rgba(255, 74, 34, 0.65);
 }
 
 body.theme-light {
