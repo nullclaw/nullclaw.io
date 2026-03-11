@@ -87,12 +87,12 @@
         {effectsDisabled ? "FX:OFF" : "FX:ON"}
       </button>
       <select class="icon-btn theme-select" value={theme} onchange={handleThemeChange} title="Theme">
-        <option value="theme-matrix">MATRIX</option>
-        <option value="theme-synthwave">SYNTH</option>
-        <option value="theme-amber">AMBER</option>
-        <option value="theme-dracula">DRACULA</option>
-        <option value="theme-light">LIGHT</option>
-        <option value="theme-8bit-lobster">LOBSTER</option>
+        <option value="theme-matrix">THEME: MATRIX</option>
+        <option value="theme-synthwave">THEME: SYNTH</option>
+        <option value="theme-amber">THEME: AMBER</option>
+        <option value="theme-dracula">THEME: DRACULA</option>
+        <option value="theme-light">THEME: LIGHT</option>
+        <option value="theme-8bit-lobster">THEME: LOBSTER</option>
       </select>
       <a href="https://github.com/nullclaw" target="_blank" class="github-btn"
         >GITHUB</a
