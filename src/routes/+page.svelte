@@ -7,104 +7,42 @@
     <p class="kicker">NULLCLAW ECOSYSTEM</p>
     <h1>Documentation Hub For Autonomous AI Infrastructure</h1>
     <p class="summary">
-      Ecosystem-level docs for `nullhub`, `nullclaw`, `nullclaw-chat-ui`,
-      `nullboiler`, and `nulltickets` (a.k.a. nulltracker). Start from product
-      boundaries, then drill into runnable quick starts and API-level reference.
+      Documentation for the `nullclaw` agent runtime and its corresponding
+      `nullclaw-chat-ui` web client. Note: for orchestrated pipelines and task
+      tracking, please refer to the
+      <a href="https://nullhub.io">NullHub Ecosystem</a>.
     </p>
 
     <div class="hero-actions">
-      <a href="https://nullhub.io" class="btn primary">NullHub Quick Start</a>
-      <a href="/nullclaw/docs/getting-started" class="btn secondary"
+      <a href="/nullclaw/docs/getting-started" class="btn primary"
         >NullClaw Quick Start</a
       >
-      <a href="/nullboiler/docs/quick-start" class="btn secondary"
-        >NullBoiler Quick Start</a
+      <a href="/chat-ui/docs/quick-start" class="btn secondary"
+        >Chat UI Quick Start</a
       >
-      <a href="/nulltickets/docs/quick-start" class="btn secondary"
-        >NullTickets Quick Start</a
-      >
+      <a href="https://nullhub.io" class="btn secondary">NullHub Ecosystem</a>
     </div>
 
     <div class="hero-metrics">
       <article>
-        <h3>5</h3>
-        <p>managed core projects</p>
-      </article>
-      <article>
         <h3>19</h3>
-        <p>nullclaw top-level CLI commands</p>
+        <p>top-level CLI commands</p>
       </article>
       <article>
-        <h3>14</h3>
-        <p>nullboiler step types in engine/runtime</p>
+        <h3>0</h3>
+        <p>external database dependencies</p>
       </article>
       <article>
-        <h3>3</h3>
-        <p>worker protocols: webhook/api_chat/openai_chat</p>
+        <h3>Terminal + Web</h3>
+        <p>dual operator surface</p>
       </article>
     </div>
-  </div>
-</section>
-
-<section class="flow">
-  <div class="section-title">System Flow</div>
-  <div class="flow-grid">
-    <article>
-      <h3>0. Management (NullHub)</h3>
-      <p>
-        <a href="https://nullhub.io">NullHub</a> is the ecosystem control center:
-        deployment wizard, process supervisor, and central configuration dashboard.
-      </p>
-    </article>
-    <article>
-      <h3>1. Runtime (NullClaw)</h3>
-      <p>
-        <a href="/nullclaw">NullClaw</a> is the execution runtime for agent behavior:
-        provider integration, tool execution, memory, channels, and gateway surface.
-      </p>
-    </article>
-    <article>
-      <h3>2. Orchestration (NullBoiler)</h3>
-      <p>
-        <a href="/nullboiler">NullBoiler</a> is workflow orchestration: DAG runs,
-        step lifecycle, retries, approvals, dispatch to workers, and event stream.
-      </p>
-    </article>
-    <article>
-      <h3>3. Task Control Plane (NullTickets / NullTracker)</h3>
-      <p>
-        <a href="/nulltickets">NullTickets</a> is task-state infrastructure: role-based
-        claim/lease execution, stage transitions, quality gates, dependencies, artifacts,
-        and queue operations.
-      </p>
-    </article>
   </div>
 </section>
 
 <section class="projects">
   <div class="section-title">Projects</div>
   <div class="project-grid">
-    <article class="project active">
-      <div class="top">
-        <span class="tag">ACTIVE</span>
-        <span class="name">Ecosystem</span>
-      </div>
-      <h3>NullHub</h3>
-      <p>
-        The simplest way to install, configure, monitor, and update the entirely
-        NullClaw ecosystem from a single dashboard or CLI.
-      </p>
-      <ul>
-        <li>Process supervision & crash recovery</li>
-        <li>Log tracking and configuration editors</li>
-        <li>One-click wizard installation</li>
-      </ul>
-      <div class="actions">
-        <a href="https://nullhub.io">Docs</a>
-        <a href="https://github.com/nullclaw/nullhub" target="_blank">GitHub</a>
-      </div>
-    </article>
-
     <article class="project active">
       <div class="top">
         <span class="tag">ACTIVE</span>
@@ -150,52 +88,6 @@
       </div>
     </article>
 
-    <article class="project active">
-      <div class="top">
-        <span class="tag">ACTIVE</span>
-        <span class="name">Orchestration</span>
-      </div>
-      <h3>NullBoiler</h3>
-      <p>
-        Workflow orchestrator for multi-step run execution with approvals,
-        retries, advanced step types, and worker dispatch.
-      </p>
-      <ul>
-        <li>DAG execution with run/step/events APIs</li>
-        <li>Worker registry + protocol-aware dispatch</li>
-        <li>Advanced steps: wait, router, loop, saga, debate, group_chat</li>
-      </ul>
-      <div class="actions">
-        <a href="/nullboiler/docs/quick-start">Docs</a>
-        <a href="https://github.com/nullclaw/nullboiler" target="_blank"
-          >GitHub</a
-        >
-      </div>
-    </article>
-
-    <article class="project active">
-      <div class="top">
-        <span class="tag">ACTIVE</span>
-        <span class="name">Task Plane</span>
-      </div>
-      <h3>NullTickets (NullTracker)</h3>
-      <p>
-        Task tracking and execution-state backend with pipelines, leases,
-        transitions, gates, dependencies, and artifacts.
-      </p>
-      <ul>
-        <li>Role-based claim/lease loop for autonomous agents</li>
-        <li>Pipeline transitions with required gates</li>
-        <li>Operational queue analytics and OTLP ingest</li>
-      </ul>
-      <div class="actions">
-        <a href="/nulltickets/docs/quick-start">Docs</a>
-        <a href="https://github.com/nullclaw/nulltickets" target="_blank"
-          >GitHub</a
-        >
-      </div>
-    </article>
-
     <article class="project roadmap">
       <div class="top">
         <span class="tag">IN DEVELOPMENT</span>
@@ -232,36 +124,10 @@
       </thead>
       <tbody>
         <tr>
-          <td>NullHub</td>
-          <td>Ecosystem Lifecycle</td>
-          <td
-            >Installation, log tails, configuration formats, app supervision</td
-          >
-          <td>Agent execution, DAGs, chat channels</td>
-        </tr>
-        <tr>
           <td>NullClaw</td>
           <td>Agent runtime and execution</td>
           <td>Provider calls, tool execution, memory, channels, gateway</td>
           <td>Cross-task queueing and stage lifecycle history</td>
-        </tr>
-        <tr>
-          <td>NullBoiler</td>
-          <td>Workflow orchestration</td>
-          <td
-            >Run graph, step dependency scheduler, worker dispatch,
-            approvals/retries</td
-          >
-          <td>Long-lived task pipeline states and lease-based claim queue</td>
-        </tr>
-        <tr>
-          <td>NullTickets / NullTracker</td>
-          <td>Task state control plane</td>
-          <td
-            >Pipelines/stages, claim+lease auth, transitions, gates, artifacts,
-            ops queue</td
-          >
-          <td>Prompt execution and worker protocol dispatch</td>
         </tr>
       </tbody>
     </table>
@@ -271,23 +137,6 @@
 <section class="scenarios">
   <div class="section-title">When To Use What</div>
   <div class="scenario-grid">
-    <article>
-      <h3>The Whole Stack (Using NullHub)</h3>
-      <p class="lead">
-        Best for deploying the entire autonomous infrastructure.
-      </p>
-      <p>
-        <strong>Use when:</strong> you want a queue-backed software factory: tasks
-        tracked in NullTickets, orchestrated by NullBoiler, and executed by NullClaw
-        workers — all managed by NullHub.
-      </p>
-      <p>
-        <strong>Real software example:</strong> setting up a multi-agent system on
-        a fresh VPS or local machine. Just run `nullhub install` and let the wizard
-        link everything automatically.
-      </p>
-    </article>
-
     <article>
       <h3>Only NullClaw</h3>
       <p class="lead">
@@ -302,83 +151,31 @@
         refactor a module, run tests, and open a PR summary in one interactive session.
       </p>
     </article>
-
-    <article>
-      <h3>NullClaw + NullBoiler</h3>
-      <p class="lead">
-        Best for DAG workflows with parallel branches and approvals.
-      </p>
-      <p>
-        <strong>Use when:</strong> work must be decomposed into steps (research →
-        implement → review), and each step can route to specialized workers/tags.
-      </p>
-      <p>
-        <strong>Real software example:</strong> release automation where one worker
-        generates changelog context, another writes docs, then a human approval step
-        gates publish.
-      </p>
-    </article>
-
-    <article>
-      <h3>NullClaw + NullTickets (NullTracker)</h3>
-      <p class="lead">Best for persistent task lifecycle and quality gates.</p>
-      <p>
-        <strong>Use when:</strong> you need role-based claiming, dependencies, retry/dead-letter
-        rules, and auditable transitions between delivery stages.
-      </p>
-      <p>
-        <strong>Real software example:</strong> backlog service where coding tasks
-        move through `research → coding → review → done`, with required gate `tests_passed`
-        before review.
-      </p>
-    </article>
   </div>
 </section>
 
 <section class="quickstart">
-  <div class="section-title">Ecosystem Quick Start</div>
+  <div class="section-title">Quick Start</div>
   <div class="panel">
     <pre><code
         ># The easiest way to get started is with NullHub!
 # This single binary will download, install, and wire up the rest of the ecosystem.
-git clone https://github.com/nullclaw/nullhub.git
-cd nullhub
-zig build
-./zig-out/bin/nullhub
+# See https://nullhub.io for more.
 
 # -------------------------------------------------------------
-# Or, if you want to run components manually from source:
+# Or, if you want to run NullClaw manually from source:
 
-# 1) NullClaw runtime
 git clone https://github.com/nullclaw/nullclaw.git
 cd nullclaw
 zig build -Doptimize=ReleaseSmall
 ./zig-out/bin/nullclaw onboard --provider openrouter --api-key &lt;API_KEY&gt;
-./zig-out/bin/nullclaw agent -m "hello from nullclaw"
-
-# 2) NullBoiler with mock worker (runnable from repo tests)
-git clone https://github.com/nullclaw/nullboiler.git
-cd ../nullboiler
-zig build -Doptimize=ReleaseSmall
-python3 tests/mock_worker.py 9999
-./zig-out/bin/nullboiler --port 8080 --db /tmp/nullboiler.db
-curl -s -X POST http://127.0.0.1:8080/workers \
-  -H 'Content-Type: application/json' \
-  -d '&#123;"id":"test-worker-1","url":"http://127.0.0.1:9999/webhook","token":"dev","tags":["tester"],"max_concurrent":2&#125;'
-
-# 3) NullTickets / NullTracker task backend
-git clone https://github.com/nullclaw/nulltickets.git
-cd ../nulltickets
-zig build -Doptimize=ReleaseSmall
-./zig-out/bin/nulltickets --port 7700 --db /tmp/nulltickets.db
-curl -s http://127.0.0.1:7700/health</code
+./zig-out/bin/nullclaw agent -m "hello from nullclaw"</code
       ></pre>
   </div>
 </section>
 
 <style>
   .hero,
-  .flow,
   .projects,
   .boundaries,
   .scenarios,
@@ -491,37 +288,6 @@ curl -s http://127.0.0.1:7700/health</code
     margin-bottom: 16px;
   }
 
-  .flow {
-    margin-top: 10px;
-  }
-
-  .flow-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
-  }
-
-  .flow-grid article {
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px;
-    background: var(--bg-surface);
-  }
-
-  .flow-grid h3 {
-    margin: 0 0 10px;
-  }
-
-  .flow-grid p {
-    margin: 0;
-    color: var(--fg-dim);
-    line-height: 1.6;
-  }
-
-  .flow-grid a {
-    color: var(--accent);
-  }
-
   .projects {
     margin-top: 28px;
   }
@@ -611,75 +377,6 @@ curl -s http://127.0.0.1:7700/health</code
     border-bottom-style: solid;
   }
 
-  .boundaries,
-  .scenarios {
-    margin-top: 28px;
-  }
-
-  .table-wrap {
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: auto;
-    background: var(--bg-surface);
-  }
-
-  table {
-    width: 100%;
-    min-width: 860px;
-    border-collapse: collapse;
-  }
-
-  th,
-  td {
-    text-align: left;
-    padding: 12px;
-    border-bottom: 1px solid var(--border);
-    vertical-align: top;
-    line-height: 1.55;
-  }
-
-  th {
-    color: var(--fg);
-    font-size: 0.86rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    background: color-mix(in srgb, var(--bg) 74%, transparent);
-  }
-
-  td {
-    color: var(--fg-dim);
-    font-size: 0.92rem;
-  }
-
-  .scenario-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-  }
-
-  .scenario-grid article {
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px;
-    background: var(--bg-surface);
-  }
-
-  .scenario-grid h3 {
-    margin: 0;
-    font-size: 1.2rem;
-  }
-
-  .scenario-grid p {
-    margin: 10px 0 0;
-    color: var(--fg-dim);
-    line-height: 1.7;
-  }
-
-  .scenario-grid .lead {
-    color: var(--fg);
-    font-size: 0.94rem;
-  }
-
   .quickstart {
     margin: 30px auto 56px;
   }
@@ -699,7 +396,6 @@ curl -s http://127.0.0.1:7700/health</code
   }
 
   @media (max-width: 1100px) {
-    .flow-grid,
     .project-grid,
     .scenario-grid {
       grid-template-columns: 1fr;
@@ -708,7 +404,6 @@ curl -s http://127.0.0.1:7700/health</code
 
   @media (max-width: 700px) {
     .hero,
-    .flow,
     .projects,
     .boundaries,
     .scenarios,
