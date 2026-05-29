@@ -4,7 +4,7 @@ This page is aligned with current behavior in `build.zig`, `build.zig.zon`, `src
 
 ## Prerequisites
 
-- Zig `0.15.2`
+- Zig `0.16.0`
 - Git
 - Any provider API key (for example OpenRouter/OpenAI/Anthropic)
 
